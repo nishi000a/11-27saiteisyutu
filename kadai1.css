@@ -16,12 +16,6 @@ main {
   justify-content: center;
 }
 
-footer {
-  width: 100%;
-  height: 50px;
-  background-color: #AAAAAA;
-}
-
 .step-box {
   width: 300px;
   margin-right: 30px;
@@ -52,7 +46,6 @@ h3 {
   background-image: url(img.kadai1/flow01.png);
   background-position: bottom;
   background-size: cover;
-
 }
 
 .step-img2 {
@@ -60,7 +53,6 @@ h3 {
   background-image: url(img.kadai1/flow02.png);
   background-position: bottom;
   background-size: cover;
-
 }
 
 .step-img3 {
@@ -68,22 +60,46 @@ h3 {
   background-image: url(img.kadai1/flow03.png);
   background-position: bottom;
   background-size: cover;
-
 }
 
-@media screen and (max-width: 768px) {
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #AAAAAA;
+}
+
+@media screen and (max-width:768px) {
+  
   header{
        width: 100%;
   }
+  
   main{
+       display: block;
        width: 100%;
+       margin-top:50px;
+       margin-bottom:50px;
+       justify-content: center;
   }
 
-  footer{
-       width: 100%;
-  }
-
-  step-box{
-       width: 90%;
-  }
+.step-box:nth-child(1) {
+  margin-bottom:20px;
 }
+
+.step-box:nth-child(2) {
+  margin-bottom:20px;
+}
+
+.step-box:nth-child(3) {
+  margin-right: auto;
+}
+
+ .step-box{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+    footer{
+       width: 100%;
+  }
+  
